@@ -1,4 +1,9 @@
-.serverless
+# package directories
 node_modules
+
+# Serverless directories
+.serverless
+
+# VS Cide directories
 .build
 .vscode
