@@ -32,6 +32,24 @@ functions:
       - httpApi:
           path: /product/{id}
           method: get
+  updateProduct:
+    handler: src/handlers.updateProduct
+    events:
+      - httpApi:
+          path: /product/{id}
+          method: put
+  deleteProduct:
+    handler: src/handlers.deleteProduct
+    events:
+      - httpApi:
+          path: /product/{id}
+          method: delete
+  listProducts:
+    handler: src/handlers.listProducts
+    events:
+      - httpApi:
+          path: /products
+          method: get
 
 plugins:
   - serverless-plugin-typescript
