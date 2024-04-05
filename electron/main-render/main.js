@@ -4,12 +4,12 @@ import url from 'url';
 
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
-let winOne, winTwo
+let winOne, winTwo;
 
 function createWindow() {
   winOne = new BrowserWindow();
   winTwo = new BrowserWindow();
-  
+
   winOne.loadURL(
     url.format({
       pathname: path.join('.', 'one.html'),
@@ -26,8 +26,8 @@ function createWindow() {
     })
   );
 
-  winOne.webContents.openDevTools()
-  winTwo.webContents.openDevTools()
+  winOne.webContents.openDevTools();
+  winTwo.webContents.openDevTools();
 
   winOne.on('closed', () => {
     winOne = null;
