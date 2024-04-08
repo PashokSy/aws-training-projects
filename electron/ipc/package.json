@@ -1,0 +1,12 @@
+{
+  "name": "ipc",
+  "version": "1.0.0",
+  "main": "main.js",  
+  "type": "module",
+  "devDependencies": {
+    "electron": "^1.6.11"
+  },
+  "scripts": {
+      "start": "electron ."
+  }
+}
